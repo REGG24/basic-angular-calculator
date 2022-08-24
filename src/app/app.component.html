@@ -1,0 +1,38 @@
+<div class="container">
+  <app-display [expression]="expression"></app-display>
+  <div class="buttons">
+    <div class="operands">
+      <app-calc-button item="+" (newItemEvent)="addItem($event)"></app-calc-button>
+      <app-calc-button item="-" (newItemEvent)="addItem($event)"></app-calc-button>
+      <app-calc-button item="x" (newItemEvent)="addItem($event)"></app-calc-button>
+      <app-calc-button item="÷" (newItemEvent)="addItem($event)"></app-calc-button>
+    </div>
+    <div class="section-2">
+      <div class="section-3">
+        <div class="row-three">
+          <app-calc-button item="7" (newItemEvent)="addItem($event)"></app-calc-button>
+          <app-calc-button item="8" (newItemEvent)="addItem($event)"></app-calc-button>
+          <app-calc-button item="9" (newItemEvent)="addItem($event)"></app-calc-button>
+        </div>
+        <div class="row-three">
+          <app-calc-button item="4" (newItemEvent)="addItem($event)"></app-calc-button>
+          <app-calc-button item="5" (newItemEvent)="addItem($event)"></app-calc-button>
+          <app-calc-button item="6" (newItemEvent)="addItem($event)"></app-calc-button>
+        </div>
+        <div class="row-three">
+          <app-calc-button item="1" (newItemEvent)="addItem($event)"></app-calc-button>
+          <app-calc-button item="2" (newItemEvent)="addItem($event)"></app-calc-button>
+          <app-calc-button item="3" (newItemEvent)="addItem($event)"></app-calc-button>
+        </div>
+        <div class="row-three">
+          <app-calc-button item="0" (newItemEvent)="addItem($event)"></app-calc-button>
+          <app-calc-button item="." (newItemEvent)="addItem($event)"></app-calc-button>
+          <app-calc-button item="AC" (newItemEvent)="addItem($event)"></app-calc-button>
+        </div>
+      </div>
+      <div>
+        <app-calc-button item="=" (newItemEvent)="addItem($event)"></app-calc-button>
+      </div>
+    </div>
+  </div>
+</div>

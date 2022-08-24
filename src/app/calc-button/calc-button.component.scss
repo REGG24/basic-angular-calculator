@@ -1,0 +1,38 @@
+button {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: 1px solid rgb(183, 181, 181);
+    font-size: large;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(100, 100, 102);
+
+    &.normal {
+        height: 80px;
+
+        &.operand {
+            color: blue;
+        }
+
+        &.number {
+            color: black;
+        }
+
+        &.ac {
+            background-color: red;
+            color: white;
+        }
+    }
+
+    &.equals {
+        height: 100%;
+        background-color: rgb(50, 146, 205);
+        color: white;
+    }
+
+    &:active {
+        transform: scale(0.98);
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    }
+}
